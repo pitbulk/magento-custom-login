@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Custom_Login
+ * @package Custom_Login
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="customer.login.container">
+            <container name="custom.login.login.container" label="Custom Login Container" htmlTag="div" htmlClass="block block-custom-login-container">
+                <block class="Custom\Login\Block\Login\Elements" name="custom_login_login_elements" />
+            </container>
+        </referenceContainer>
+        <move element="customer.new" destination="customer.login.container" after="custom.login.login.container"/>
+        <move element="customer_form_login" destination="customer.login.container" after="custom.login.login.container"/>
+    </body>
+</page>
