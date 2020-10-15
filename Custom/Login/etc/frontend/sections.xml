@@ -10,7 +10,6 @@
     <action name="mysso/custom/login">
         <section name="checkout-data"/>
         <section name="wishlist"/>
-        <section name="multiplewishlist"/>
         <section name="customer"/>
         <section name="cart"/>
     </action>
